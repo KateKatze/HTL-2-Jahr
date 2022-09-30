@@ -37,7 +37,7 @@ public class IOCheck {
     public static void main(String[] args) {
         int upper;
         Scanner input = new Scanner(System.in);
-        System.out.print("Berechnen der Faktoriellen von: ");
+        System.out.print("Berechne Faktoriellen von: ");
         upper = input.nextInt();
         System.out.println(upper + "! = " + fakt(upper));
     }
@@ -51,19 +51,27 @@ public class IOCheck {
     }
 
          */
- static  Scanner input = new Scanner(System.in);
+ static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
         int upper;
 
-        upper = readInt("Berechnen der Faktorielle von: ");
+        upper = readInt("Berechne Faktorielle von: ", 1, 12);
         System.out.println(upper + "! = " + fakt(upper));
     }
 
-    public static int readInt(String txt) {
+    public static int readInt(String txt, int min, int max) {
         int retVal;
         System.out.print(txt);
-        retVal = input.nextInt();
+
+        do {
+            retVal = input.nextInt();
+            if (retVal < min || retVal > max) {
+                System.out.println("Die Zahl soll zwischen " + min + " und " + max + " sein");
+                System.out.print(txt);
+            }
+        } while (retVal < min || retVal > max);
+
         return retVal;
     }
 
