@@ -49,10 +49,19 @@ public class TurtleCheck {
         r.print();
         r2.print();
 
+
+        Turtle main = new Turtle();
+
         Rectangle r1 = new Rectangle();
         r1.height = 50;
         r1.width = 100;
+        r1.drawTurtle = main;
         r1.draw();
 
+        Rectangle r3 = new Rectangle();
+        r3.height = 150;
+        r3.width = 250;
+        r3.drawTurtle = main;
+        r3.draw();
     }
 }

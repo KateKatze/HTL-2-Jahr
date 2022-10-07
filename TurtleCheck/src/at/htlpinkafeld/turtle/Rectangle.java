@@ -8,6 +8,8 @@ public class Rectangle {
     // can be seen within this class
     int width;
     int height;
+    Turtle drawTurtle;
+    //Turtle t; - for HÜ, we can save here a variable
 
     //method
     public void print() {
@@ -16,15 +18,14 @@ public class Rectangle {
     }
 
     public void draw() {
-        Turtle t = new Turtle();
-        t.hideTurtle();
-        t.right(90);
-        t.forward(width);
-        t.right(90);
-        t.forward(height);
-        t.right(90);
-        t.forward(width);
-        t.right(90);
-        t.forward(height);
+        drawTurtle.hideTurtle();
+        drawTurtle.right(90);
+        drawTurtle.forward(width);
+        drawTurtle.right(90);
+        drawTurtle.forward(height);
+        drawTurtle.right(90);
+        drawTurtle.forward(width);
+        drawTurtle.right(90);
+        drawTurtle.forward(height);
     }
 }
