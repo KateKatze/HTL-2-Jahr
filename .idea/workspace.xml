@@ -24,7 +24,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/katek/Desktop/HTL/2. Jahr/POS/IOCheck",
+    "last_opened_file_path": "C:/Users/katek/Desktop/HTL/2. Jahr/POS",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -57,10 +57,22 @@
       <updated>1666289440023</updated>
       <workItem from="1666289441531" duration="64000" />
       <workItem from="1666289577112" duration="74000" />
+      <workItem from="1666291908271" duration="203000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
