@@ -1,7 +1,6 @@
 package at.htlpinkafeld.turtle;
 
 import ch.aplu.turtle.Turtle;
-import ch.aplu.turtle.TurtleFrame;
 
 public class TurtleCheck {
     /*
@@ -34,7 +33,7 @@ public class TurtleCheck {
             t.right(144);
         }
         }
-    */
+
 
     public static void main(String[] args) {
         //object from the class
@@ -63,5 +62,26 @@ public class TurtleCheck {
         r3.width = 250;
         r3.drawTurtle = main;
         r3.draw();
+    }*/
+
+    public static void main(String[] args) {
+        System.out.print("Welcome to the program 'RectangleRotation'! \n Press 'Run' and enjoy the spiiiiin :) ");
+
+        Rectangle first = new Rectangle();
+        first.thommy = new Turtle();
+        first.width = 200;
+        first.height = 100;
+        first.x = 0;
+        first.y = 100;
+        first.angle = 10;
+        // dividing angle through 360 degrees we will know exactly, how many times it needs to turn with this angle before it will reach the start point
+        int counter = 360/first.angle;
+
+        for (int i = 0; i <= counter; i++) {
+            first.erase();
+            first.draw();
+            first.spin();
+        }
     }
+
 }

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Libraries">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../.gitignore/Libraries" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/../.gitignore/Libraries/turtle-apidocs" />
+    </JAVADOC>
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../.gitignore/Libraries" recursive="false" />
+  </library>
+</component>
