@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68998ed2-645f-4b1a-bf01-fdcb51bd4ce5" name="Changes" comment="" />
+    <list default="true" id="68998ed2-645f-4b1a-bf01-fdcb51bd4ce5" name="Changes" comment="Committing gitignored settings">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +26,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/katek/Desktop/HTL/2. Jahr/POS",
+    "last_opened_file_path": "C:/Users/katek/Desktop/HTL/2. Jahr/POS/TurtleCheck",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -57,8 +59,17 @@
       <updated>1666289440023</updated>
       <workItem from="1666289441531" duration="64000" />
       <workItem from="1666289577112" duration="74000" />
-      <workItem from="1666291908271" duration="203000" />
+      <workItem from="1666291908271" duration="259000" />
+      <workItem from="1666292267578" duration="384000" />
     </task>
+    <task id="LOCAL-00001" summary="Committing gitignored settings">
+      <created>1666292149991</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666292149991</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,5 +85,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Committing gitignored settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Committing gitignored settings" />
   </component>
 </project>

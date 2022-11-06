@@ -37,6 +37,9 @@ public class Rectangle {
 
     */
 
+/*
+// HÜ RectangleRotation
+
 public class Rectangle {
     //setPos() functions with double
     double x, y;
@@ -64,3 +67,30 @@ public class Rectangle {
         thommy.sleep(20);
     }
 }
+ */
+public class Circle {
+    int cx, cy;
+    double radius;
+    Turtle mark;
+    public void draw() {
+        mark.setPos(cx,cy);
+        mark.setRadius(radius);
+        mark.hideTurtle();
+        mark.setLineWidth(2);
+        mark.setPenColor(Color.red);
+
+        for (int i = 0; i < 1; i++) {
+            thommy.right(360);
+        }
+    }
+}
+/*
+public class Rectangle {
+    int width, height, ulx, uly;
+    Turtle gustl;
+
+
+}
+
+ */
+

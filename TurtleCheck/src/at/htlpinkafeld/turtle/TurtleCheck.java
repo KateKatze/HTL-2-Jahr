@@ -64,6 +64,9 @@ public class TurtleCheck {
         r3.draw();
     }*/
 
+    /*
+    //HÜ RectangleRotation
+
     public static void main(String[] args) {
         System.out.print("Welcome to the program 'RectangleRotation'! \n Press 'Run' and enjoy the spiiiiin :) ");
 
@@ -82,6 +85,28 @@ public class TurtleCheck {
             first.draw();
             first.spin();
         }
+    }
+ */
+
+    public static void main(String[] args) {
+        System.out.print("Welcome to the program 'CircleRect '! \n Press 'Run' and enjoy the picture :) ");
+
+        Circle c1 = new Circle();
+        c1.mark = new Turtle();
+        mark.radius = 100.0;
+        mark.cx = 200;
+        mark.cy = 300;
+
+
+/*
+        Rectangle r1 = new Rectangle();
+        r1.gustl = new Turtle;
+
+
+
+ */
+
+
     }
 
 }
