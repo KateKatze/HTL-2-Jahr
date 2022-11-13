@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc9cbd76-c66d-40ca-8bf4-0349cf98b45d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/htlpinkafeld/circlerect/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/htlpinkafeld/circlerect/CircleRect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/htlpinkafeld/circlerect/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TurtleCheck/TurtleCheck.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TurtleCheck/TurtleCheck.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TurtleCheck/out/production/TurtleCheck/at/htlpinkafeld/turtle/Rectangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TurtleCheck/out/production/TurtleCheck/at/htlpinkafeld/turtle/TurtleCheck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TurtleCheck/src/at/htlpinkafeld/turtle/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TurtleCheck/src/at/htlpinkafeld/turtle/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TurtleCheck/src/at/htlpinkafeld/turtle/TurtleCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TurtleCheck/src/at/htlpinkafeld/turtle/TurtleCheck.java" afterDir="false" />
+    <list default="true" id="fc9cbd76-c66d-40ca-8bf4-0349cf98b45d" name="Changes" comment="HÜ CircleRect done">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,17 +28,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/katek/Desktop/HTL/2. Jahr/POS/.gitignore/Libraries",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/katek/Desktop/HTL/2. Jahr/POS/.gitignore/Libraries&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,8 +47,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667757020342</updated>
-      <workItem from="1667757021656" duration="5015000" />
+      <workItem from="1667757021656" duration="5959000" />
+      <workItem from="1668177507989" duration="15000" />
+      <workItem from="1668364287443" duration="622000" />
     </task>
+    <task id="LOCAL-00001" summary="HÜ CircleRect done">
+      <created>1667766615782</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667766615782</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,5 +74,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="HÜ CircleRect done" />
+    <option name="LAST_COMMIT_MESSAGE" value="HÜ CircleRect done" />
   </component>
 </project>

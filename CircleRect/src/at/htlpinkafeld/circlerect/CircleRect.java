@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class CircleRect {
     public static void main(String[] args) {
-        int circlesNumber = 3, givenRadius;
+        int circlesAmount = 3;
+        int givenRadius;
 
         Turtle kate = new Turtle();
         //Für alle Figuren gilt: Turtle: unsichtbar + Linienstärke: 2 + Farbe: rot
@@ -21,10 +22,10 @@ public class CircleRect {
         // for width and height
         int diameter = givenRadius *2;
 
-        for (int i = 0; i < circlesNumber; i++) {
+        for (int i = 0; i < circlesAmount; i++) {
             Circle round = new Circle(givenRadius, -100 + (diameter * i), 0, kate);
             if (i == 0) {
-                Rectangle rectangle = new Rectangle(diameter * circlesNumber, diameter, round.cx - round.radius, round.cy + round.radius, kate);
+                Rectangle rectangle = new Rectangle(diameter * circlesAmount, diameter, round.cx - round.radius, round.cy + round.radius, kate);
                 rectangle.draw();
             }
             round.draw();
