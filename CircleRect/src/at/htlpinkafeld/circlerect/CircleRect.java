@@ -16,7 +16,7 @@ public class CircleRect {
 
         // extra exercise
         Scanner input = new Scanner(System.in);
-        System.out.print("Welcome to the CircleRect Program! Please type the radius here, so the Turtle can draw something for you: ");
+        System.out.print("Welcome to the CircleRect Program! Please type the radius value (int) here, so the Turtle can draw something for you: ");
         givenRadius = input.nextInt();
 
         // for width and height

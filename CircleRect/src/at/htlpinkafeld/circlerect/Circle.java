@@ -14,9 +14,9 @@ public class Circle {
         kate.setPos(cx, cy);
         for (int i = 0; i < 4; i++) {
             kate.forward(startCross);
-            kate.right(180);
-            kate.forward(startCross);
             kate.right(90);
+            kate.forward(startCross);
+            kate.right(180);
         }
         kate.setPos(cx, cy + radius);
         kate.rightCircle(radius);
