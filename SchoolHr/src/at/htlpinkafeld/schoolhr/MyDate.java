@@ -1,7 +1,9 @@
 package at.htlpinkafeld.schoolhr;
 
 public class MyDate {
-    private int day, month, year;
+    private int day;
+    private int month;
+    private int year;
 
     public MyDate(int day, int month, int year) {
         this.day = day;
@@ -9,12 +11,9 @@ public class MyDate {
         this.year = year;
     }
 
-    @Override
     public String toJSON() {
-        return "'birthdate': {" +
-                "'day': " + day +
+        return "{'day': " + day +
                 ", 'month': " + month +
-                ", 'year': " + year +
-                '}';
+                ", 'year': " + year + "}";
     }
 }

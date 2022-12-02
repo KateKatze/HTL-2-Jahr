@@ -8,8 +8,7 @@ public class HeadOfDepartment extends Teacher {
         this.departmentName = departmentName;
     }
 
-    @Override
     public String toJSON() {
-        return "HeadOfDepartment: {'departmentName': " + this.departmentName +  ", " + super.toJSON() + "}";
+        return super.toJSON() + " , " + "'departmentName': " + this.departmentName + "}";
     }
 }
