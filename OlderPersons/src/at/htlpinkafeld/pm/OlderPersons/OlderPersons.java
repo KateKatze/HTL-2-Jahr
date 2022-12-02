@@ -15,8 +15,12 @@ public class OlderPersons {
             return;
         }
 
+        // array of arguments (looping through)
+        //index
         int idx = 0;
-        for (int i = 0; i < (args.length-1); i++) {
+        //for loop through the arguments
+        for (int i = 0; i < args.length; i++) {
+            //up the array index, creating new objects in array person
             person[idx++] = new Persons(args[i], Integer.parseInt(args[++i]));
         }
 
@@ -27,7 +31,7 @@ public class OlderPersons {
         }
 
         // printing the older ones
-        double averageAge = getAverageAge(person);
+        double averageAge = countAverageAge(person);
         System.out.println("\n" + "The older ones (avg = " + averageAge + "):");
         for (Persons per: person) {
             if (per.getAge() > averageAge){
@@ -37,12 +41,12 @@ public class OlderPersons {
 
         // setting false to find the match with the name we have in the "base"
         boolean search = false;
-        System.out.println("\n" + "Enter the name you are looking for: ");
+        System.out.print("\n" + "Enter the name you are looking for: ");
         String name = input.next();
         for (Persons per: person){
             if (name.equals(per.getName())){
                 if (!search){
-                    System.out.println("I've found:");
+                    System.out.println("\n" + "I've found:");
                     search = true;
                 }
                 System.out.println("\n" + per);
@@ -54,11 +58,11 @@ public class OlderPersons {
     }
 
     // checking the average age to print the older ones (>averageAge)
-    public static double getAverageAge(Persons[] person){
-        double ageTotal = 0;
+    public static double countAverageAge(Persons[] person){
+        double ages = 0;
         for (Persons per: person){
-            ageTotal += per.getAge();
+            ages += per.getAge();
         }
-        return  ageTotal/(person.length);
+        return  ages/(person.length);
     }
 }

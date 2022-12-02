@@ -1,6 +1,6 @@
 package at.htlpinkafeld.schoolhr;
 
-public class Pupil {
+public class Pupil extends Person {
     private String className;
     private String firstName;
     private String lastName;
