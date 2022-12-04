@@ -8,7 +8,7 @@ public class Teacher extends Person {
         this.employeeNum = employeeNum;
     }
 
-    public String toJSON() {
-        return super.toJSON() + ", " +  "'employeeNum': " + this.employeeNum + "}";
+    public String getObjectAsJson() {
+        return super.getObjectAsJson() + ", 'employeeNum': " + employeeNum;
     }
 }
