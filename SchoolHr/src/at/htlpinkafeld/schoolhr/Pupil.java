@@ -17,6 +17,6 @@ public class Pupil extends Person {
     }
 
     public String getObjectAsJson() {
-        return super.getObjectAsJson() + ", 'className': " + className;
+        return super.getObjectAsJson() + ", 'className': " + "'" +  className + "'";
     }
 }

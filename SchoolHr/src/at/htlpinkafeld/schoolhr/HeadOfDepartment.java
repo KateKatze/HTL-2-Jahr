@@ -9,7 +9,7 @@ public class HeadOfDepartment extends Teacher {
     }
 
     public String getObjectAsJson() {
-        return super.getObjectAsJson() + ", 'departmentName': " + departmentName;
+        return super.getObjectAsJson() + ", 'departmentName': " + "'" + departmentName + "'";
     }
 
 }

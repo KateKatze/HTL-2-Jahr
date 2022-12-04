@@ -26,13 +26,13 @@ public class Person {
         // zb: Pupil.toJSON() -> es wird in Pupil reingesprungen, dort das getObjectAsJson aufgerufen. Dort wird aber
         // wieder mit super().getObjectAsJson() als erstes das getObjectAsJson von Person aufgerufen.
         // dann werden im Pupil die gewünschten "Spezialattribute" von Pupil hinzugefügt.
-        return "{ " + getObjectAsJson() + " }";
+        return "{" + getObjectAsJson() + "}";
     }
 
     public String getObjectAsJson() {
         return "'firstName': " + "'" + this.firstName +
                 "', 'lastName': " + "'" + lastName +
-                "', 'socSecNum': " + "'" + socSecNum +
-                "', 'birthdate': " + birthdate.toJSON();
+                "', 'socSecNum': " + socSecNum +
+                ", 'birthdate': " + birthdate.toJSON();
     }
 }
