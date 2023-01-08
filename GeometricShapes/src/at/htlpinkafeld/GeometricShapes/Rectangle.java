@@ -4,13 +4,17 @@ public class Rectangle extends Shape {
     private double width;
     private double height;
 
-    public Rectangle(){
-        super();
+    public Rectangle(double width, double height){
         this.width = width;
         this.height = height;
     }
 
     public double getArea() {
-        return this.width + this.height;
+        return this.width * this.height;
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle, area=" + String.format("%.2f", getArea()) + ", Parameters: Height=" + this.height + ", width=" + this.width;
     }
 }
