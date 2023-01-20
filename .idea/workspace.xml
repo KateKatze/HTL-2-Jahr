@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68998ed2-645f-4b1a-bf01-fdcb51bd4ce5" name="Changes" comment="Committing gitignored settings">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="68998ed2-645f-4b1a-bf01-fdcb51bd4ce5" name="Changes" comment="Committing gitignored settings" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +24,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/katek/Desktop/HTL/2. Jahr/POS/TurtleCheck",
+    "last_opened_file_path": "C:/Users/katek/Desktop/HTL/2. Jahr/POS/Market",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -61,6 +59,7 @@
       <workItem from="1666289577112" duration="74000" />
       <workItem from="1666291908271" duration="259000" />
       <workItem from="1666292267578" duration="384000" />
+      <workItem from="1674244179123" duration="83000" />
     </task>
     <task id="LOCAL-00001" summary="Committing gitignored settings">
       <created>1666292149991</created>
