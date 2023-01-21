@@ -16,12 +16,15 @@ public class SheetOfPaper {
     }
 
     public int getLength(){
-        int retVal;
+        int retVal=0;
+        /*
         switch(this.format){
             case 0:
                 retVal = 1189;
                 break;
         }
+         */
+        return retVal;
     }
 
 }
