@@ -13,7 +13,7 @@ public class ReciprocalSum {
 
             System.out.println("");
             System.out.println("Progression Result: " + x);
-        }  catch (ArrayIndexOutOfBoundsException | NumberFormatException e) { //hier steht die referenz auf den gefangenen objekt
+        }  catch (ArrayIndexOutOfBoundsException | NumberFormatException e) { //hier steht die referenz auf den gefangenen objekt // kann man einfach nur Exception e schreiben, dann werden alle Fehler gefangen
             System.out.println("error: " + e.toString());
             System.out.println("Program usage: java ReciprocalSum startValue endValue");
         }
@@ -29,6 +29,8 @@ public class ReciprocalSum {
     }
     private static double reciprocal(double val) {
         double retVal = 1/val;
+        if(Double.isInfinite(retVal))
+            throw new ArithmeticException("Double-division by zero");
         return retVal;
     }
 }
