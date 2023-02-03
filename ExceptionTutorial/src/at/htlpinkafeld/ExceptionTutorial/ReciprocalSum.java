@@ -13,8 +13,9 @@ public class ReciprocalSum {
 
             System.out.println("");
             System.out.println("Progression Result: " + x);
-        }  catch (ArrayIndexOutOfBoundsException e) { //hier steht die referenz auf den gefangenen objekt
-            System.out.println("usage: java ReciprocalSum startValue endValue");
+        }  catch (ArrayIndexOutOfBoundsException | NumberFormatException e) { //hier steht die referenz auf den gefangenen objekt
+            System.out.println("error: " + e.toString());
+            System.out.println("Program usage: java ReciprocalSum startValue endValue");
         }
     }
     private static double progressionSum(int start, int stop) {
