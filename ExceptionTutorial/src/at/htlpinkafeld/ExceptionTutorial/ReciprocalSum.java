@@ -1,15 +1,21 @@
 package at.htlpinkafeld.ExceptionTutorial;
 
+import java.lang.reflect.Array;
+
 public class ReciprocalSum {
     public static void main(String[] args) {
         double x;
 
-        int beg = Integer.parseInt(args[0]);
-        int end = Integer.parseInt(args[1]);
-        x = progressionSum(beg, end);
+        try {
+            int beg = Integer.parseInt(args[0]);
+            int end = Integer.parseInt(args[1]);
+            x = progressionSum(beg, end);
 
-        System.out.println("");
-        System.out.println("Progression Result: " + x);
+            System.out.println("");
+            System.out.println("Progression Result: " + x);
+        }  catch (ArrayIndexOutOfBoundsException e) { //hier steht die referenz auf den gefangenen objekt
+            System.out.println("usage: java ReciprocalSum startValue endValue");
+        }
     }
     private static double progressionSum(int start, int stop) {
         double retVal = 0;
