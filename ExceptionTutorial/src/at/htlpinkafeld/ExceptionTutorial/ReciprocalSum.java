@@ -22,15 +22,20 @@ public class ReciprocalSum {
         double retVal = 0;
 
         for(int val=start; val <= stop; val++){
-            System.out.print("1/"+val+" ");
-            retVal = retVal + reciprocal(val);
+            try {
+                retVal = retVal + reciprocal(val);
+                System.out.print("1/" + val + " ");
+            } catch (ArithmeticException e) {
+                // do nothing - is bad!!! immer eine Anweisung geben
+            }
         }
         return retVal;
     }
-    private static double reciprocal(double val) {
+    private static double reciprocal(double val) { //add "throws Exception" to catch any exception
         double retVal = 1/val;
         if(Double.isInfinite(retVal))
             throw new ArithmeticException("Double-division by zero");
         return retVal;
     }
 }
+// javadoc scanner -> iwelche methode -> throws
