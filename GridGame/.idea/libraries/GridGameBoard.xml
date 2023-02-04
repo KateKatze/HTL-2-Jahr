@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="GridGameBoard">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../POS Libraries/GridGameBoard.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
