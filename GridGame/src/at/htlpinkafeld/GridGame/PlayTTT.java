@@ -1,15 +1,25 @@
 package at.htlpinkafeld.GridGame;
 
+import at.htlpinkafeld.board.CircleSymbol;
+import at.htlpinkafeld.board.CrossSymbol;
+
+import java.awt.*;
+import java.util.Scanner;
+
 public class PlayTTT {
     private static Scanner in = new Scanner(System.in);
 
     //use the Scanner in to read a int from the console
     //repeats input if an exception is thrown because of
     //invalid (non int) input
-    private static int readIntSave() { ... }
+    private static int readIntSave() {
+        int a = in.nextInt();
+        return a;
+    }
 
     public static void main(String[] args) {
         Player winner, actPlayer;
+
         Player player1 = new Player("Georg (green circle)",
                 new CircleSymbol(Color.GREEN, false, 4));
         Player player2 = new Player("Susanne (blue cross)",

@@ -24,11 +24,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/katek/Desktop/HTL/2. Jahr/POS/Market",
+    "last_opened_file_path": "/home/ek/HTL/POS 2.Jahr/GridGame",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
@@ -60,6 +61,7 @@
       <workItem from="1666291908271" duration="259000" />
       <workItem from="1666292267578" duration="384000" />
       <workItem from="1674244179123" duration="83000" />
+      <workItem from="1676382830788" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="Committing gitignored settings">
       <created>1666292149991</created>

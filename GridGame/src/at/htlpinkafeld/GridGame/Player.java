@@ -6,7 +6,7 @@ import static java.lang.String.valueOf;
 
 public class Player {
     /**
-     * Stores all possible winnig combinations of field numbers
+     * Stores all possible winning combinations of field numbers
      */
     private static int[][] winCombos = {
             {1, 2, 3}, {4, 5, 6}, {7, 8, 9},
@@ -16,7 +16,9 @@ public class Player {
     private String name;       //name of player
     private Symbol sym;        //the players board-symbol
     private int[] moveList;    //moves made; Content: Field numbers (1-9)
+
     private int numberOfMoves; //Use this as index for moveList
+
 
     public Player(String name, Symbol sym) {
         this.name = name;
@@ -30,6 +32,7 @@ public class Player {
      */
     public void resetMoveList(){
         this.numberOfMoves = 0;
+        moveList = new int[5];
     }
 
 
@@ -37,14 +40,14 @@ public class Player {
      * insert a move into the moveList (increase numberOfMoves)
      */
     public void setMove(int move){
-        for (int i = 0; i <7; i++) {
-            move++;
-        }
+        moveList[this.numberOfMoves] = move;
+        this.numberOfMoves++;
     }
 
     public int getNumberOfMoves(){
-        this.numberOfMoves = numberOfMoves;
+        return numberOfMoves;
     }
+
     public String getName() {
         Scanner namePlayer = new Scanner(System.in);
         String name = valueOf(namePlayer);
@@ -52,8 +55,6 @@ public class Player {
     }
 
     public Symbol getSym() {
-        Scanner symPlayer = new Scanner(System.in);
-        Symbol sym = (Symbol) symPlayer;
         return sym;
     }
 
@@ -63,7 +64,32 @@ public class Player {
      * @return winCombos found or null
      */
     public int[] winComboQuery(){
+        if (this.numberOfMoves < 3) {
+            return null;
+        }
+        for (int i = 0; i < winCombos.length; i++) {
+            if (checkIfComboWins(winCombos[i])) {
+                return winCombos[i];
+            }
+        }
+        return null;
+    }
 
+    private boolean checkIfComboWins(int[] combo) {
+
+        int movesInCombo = 0;
+        for (int i = 0; i < numberOfMoves; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (moveList[i] == combo[j]) {
+                    movesInCombo++;
+                }
+            }
+
+        }
+        if (movesInCombo == 3) {
+            return true;
+        }
+        return false;
     }
 
     /**
@@ -72,11 +98,13 @@ public class Player {
      * @return true if moveList contains move
      */
     public boolean inMoveList(int move) {
-                if() {
-                    return true;
-                } else {
-                    return false;
-                }
+        boolean found = false;
+        for (int i = 0; i < numberOfMoves; i++) {
+            if (moveList[i] == move) {
+                found = true;
+            }
+        }
+        return found;
     }
 
     /**
@@ -87,8 +115,6 @@ public class Player {
      * @return true if all numbers of the combo are found in the moveList
      */
     private boolean comboInMoveList(int[] winCombo) {
-        if(inMoveList()){
-
-        }
+        return true;
     }
 }
