@@ -1,8 +1,5 @@
 package at.htlpinkafeld.GridGame;
 import at.htlpinkafeld.board.Symbol;
-import java.util.Scanner;
-
-import static java.lang.String.valueOf;
 
 public class Player {
     /**
@@ -49,8 +46,6 @@ public class Player {
     }
 
     public String getName() {
-        Scanner namePlayer = new Scanner(System.in);
-        String name = valueOf(namePlayer);
         return name;
     }
 
@@ -76,7 +71,6 @@ public class Player {
     }
 
     private boolean checkIfComboWins(int[] combo) {
-
         int movesInCombo = 0;
         for (int i = 0; i < numberOfMoves; i++) {
             for (int j = 0; j < 3; j++) {
@@ -84,7 +78,6 @@ public class Player {
                     movesInCombo++;
                 }
             }
-
         }
         if (movesInCombo == 3) {
             return true;

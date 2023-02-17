@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="GridGameBoard">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../Libraries/GridGameBoard.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../POS Libraries/GridGameBoard.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

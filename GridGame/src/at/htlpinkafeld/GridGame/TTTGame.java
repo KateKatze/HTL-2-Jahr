@@ -58,12 +58,10 @@ public class TTTGame {
                 if (winner != null) {
                         return true;
                 }
-
                 if (p1.getNumberOfMoves() + p2.getNumberOfMoves() > 8) {
                         return true;
                 }
                 return false;
-
         }
 
         public Player getWinner() {
@@ -88,7 +86,6 @@ public class TTTGame {
                 if (move < 1 || move > 9) {
                         return false;
                 }
-
                 if (p1.inMoveList(move)) {
                         return false;
                 }
@@ -117,11 +114,8 @@ public class TTTGame {
                     for (int i = 0; i < winQuery.length; i++) {
                             board.setHiliteCell((winQuery[i] - 1) / 3, (winQuery[i] - 1) % 3);
                     }
-
             }
             this.nextMoveForP1 = !this.nextMoveForP1;
-
-
         }
 
         //private helper to calculate row- and column-index from field number
