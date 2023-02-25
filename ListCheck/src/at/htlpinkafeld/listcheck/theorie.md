@@ -18,3 +18,10 @@ copies ignored: 0
 
 implementiert Comparable - natürliche Reihenfolge
 Comparator - kleinste/größte zuerst
+
+
+1. same names and abt
+2. compareTo natürliche Reihenfolge
+3. 
+4.  zuerst berechnen und dann compareTo
+5. 
