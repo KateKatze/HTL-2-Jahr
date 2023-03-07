@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68998ed2-645f-4b1a-bf01-fdcb51bd4ce5" name="Changes" comment="Committing gitignored settings" />
+    <list default="true" id="68998ed2-645f-4b1a-bf01-fdcb51bd4ce5" name="Changes" comment="Committing gitignored settings">
+      <change afterPath="$PROJECT_DIR$/Lotto/src/at/htlpinkafeld/lotto/BetSlip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lotto/src/at/htlpinkafeld/lotto/BetSlipOverflowException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lotto/src/at/htlpinkafeld/lotto/Drawing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lotto/src/at/htlpinkafeld/lotto/InvalidLottoTipException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lotto/src/at/htlpinkafeld/lotto/LottoTip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lotto/src/at/htlpinkafeld/lotto/PlayLotto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lotto/src/at/htlpinkafeld/lotto/Round.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +32,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/ek/HTL/POS 2.Jahr/GridGame",
+    "last_opened_file_path": "C:/Users/katek/Desktop/HTL/2. Jahr/POS",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -62,6 +70,7 @@
       <workItem from="1666292267578" duration="384000" />
       <workItem from="1674244179123" duration="83000" />
       <workItem from="1676382830788" duration="31000" />
+      <workItem from="1678200910857" duration="373000" />
     </task>
     <task id="LOCAL-00001" summary="Committing gitignored settings">
       <created>1666292149991</created>
