@@ -13,5 +13,8 @@ class TemperatureUtilsTest {
 
     @Test
     void celsiusToFahrenheit() {
+        float result;
+        result = TemperatureUtils.celsiusToFahrenheit(0);
+        assertEquals(32.0, result, 0.001); //delta - toleranzbereich
     }
 }
