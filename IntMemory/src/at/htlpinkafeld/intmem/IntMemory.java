@@ -18,4 +18,16 @@ public class IntMemory {
     public void setValue(int n){
         this.val = n;
     }
+
+    public void addValue(int v){
+        this.val += v;
+    }
+
+    public IntMemory join(IntMemory m){
+        return new IntMemory(this.val + m.val);
+        /*
+        this.addValue(m.val);
+        return this;
+         */
+    }
 }
