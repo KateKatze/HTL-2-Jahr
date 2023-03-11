@@ -28,6 +28,9 @@ public class IntStack {
                 this.list.add(val);
         }
         public int getEleCnt(){
-                return -1;
+                return list.size();
+        }
+        public boolean isEmpty(){
+                return this.list.size() = 0;
         }
 }

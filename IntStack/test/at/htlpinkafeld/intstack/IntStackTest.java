@@ -37,7 +37,7 @@ class IntStackTest {
 
     @Test
     void testGetEleCnt(){
-        minStack.getSize();
-        assertEquals(1, minStack.getSize);
+        minStack.push(1);
+        assertEquals(1, minStack.getEleCnt());
     }
 }
