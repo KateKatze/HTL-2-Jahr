@@ -46,36 +46,38 @@ class UserManagerTest {
     }
 
     @Test
-    void setPW() throws NoSuchUserException, DuplicateUserException {
+    void setPW() {
         User user = new User("Max", "max@email.com", "oldpw");
-        usertest.add(user);
+        assertDoesNotThrow(() -> usertest.add(user), "User added");
+        assertThrows(DuplicateUserException.class, () -> usertest.add(user), "User already exists");
 
-        usertest.setPW("Max", "newpw");
+        assertDoesNotThrow(() -> usertest.get("Max").setPw("newpw"), "Password updated");
 
-        User updatedUser = usertest.get("Max");
-        assertEquals("newpw", updatedUser.getPw());
+        User usercheck = usertest.get("Max");
+        assertEquals("newpw", usercheck.getPw());
+
+        assertThrows(NoSuchUserException.class, () -> usertest.setPW("Maria", "newpw"), "User doesnt exist");
     }
 
     @Test
     void login() throws DuplicateUserException {
-        User user = new User("Max", "max@email.com", "password");
+        User user = new User("Max", "max@email.com", "pw");
         usertest.add(user);
 
-        // Act & Assert
-        assertDoesNotThrow(() -> usertest.login("Max", "password"));
+        assertDoesNotThrow(() -> usertest.login("Max", "pw"));
     }
 
     @Test
     void getUserList() throws DuplicateUserException {
-        User user1 = new User("Max", "max@email.com", "password");
-        User user2 = new User("Maria", "john@email.com", "password");
+        User user = new User("Max", "max@email.com", "pw");
+        User user1 = new User("Maria", "maria@email.com", "pw");
+        usertest.add(user);
         usertest.add(user1);
-        usertest.add(user2);
 
         List<User> userList = usertest.getUserList();
 
         assertEquals(2, userList.size());
+        assertTrue(userList.contains(user));
         assertTrue(userList.contains(user1));
-        assertTrue(userList.contains(user2));
     }
 }

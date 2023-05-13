@@ -26,13 +26,15 @@ public class UserManager {
             user.setEmail(email);
         }
     }
-    public void setPW(String username, String pw) throws NoSuchUserException{
-        User user = users.get(pw);
+    public void setPW(String username, String pw) throws NoSuchUserException, InvalidPasswordException {
+        User user = users.get(username);
         if (user == null) {
             throw new NoSuchUserException("User hasn't been found");
-        } else {
-            user.setPw(pw);
         }
+        if (pw.equals(user.getPw())) {
+            throw new InvalidPasswordException("Password should differ from the old one");
+        }
+        user.setPw(pw);
     }
 
     public void login(String username, String pw) throws NoSuchUserException, InvalidPasswordException{
